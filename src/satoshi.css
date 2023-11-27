@@ -1,0 +1,80 @@
+/**
+ * @license
+ *
+ * Font Family: Satoshi
+ * Designed by: Deni Anggara
+ * URL: https://www.fontshare.com/fonts/satoshi
+ * © 2023 Indian Type Foundry
+ *
+ * Font Styles:
+ * Satoshi Variable(Variable font)
+ * Satoshi Variable Italic(Variable font)
+ * Satoshi Light
+ * Satoshi Light Italic
+ * Satoshi Regular
+ * Satoshi Italic
+ * Satoshi Medium
+ * Satoshi Medium Italic
+ * Satoshi Bold
+ * Satoshi Bold Italic
+ * Satoshi Black
+ * Satoshi Black Italic
+ *
+*/
+
+
+/**
+* This is a variable font
+* You can controll variable axes as shown below:
+* font-variation-settings: 'wght' 900.0;
+*
+* available axes:
+
+* 'wght' (range from 300.0 to 900.0)
+
+*/
+
+
+/**
+* This is a variable font
+* You can controll variable axes as shown below:
+* font-variation-settings: 'wght' 900.0;
+*
+* available axes:
+
+* 'wght' (range from 300.0 to 900.0)
+
+*/
+
+
+
+@font-face {
+  font-family: 'Satoshi-Bold';
+  src: url('./fonts/WEB/Satoshi-Bold.woff2') format('woff2'),
+       url('./fonts/WEB/Satoshi-Bold.woff') format('woff'),
+       url('./fonts/WEB/Satoshi-Bold.ttf') format('truetype');
+       font-weight: 900;
+       font-display: swap;
+       font-style: normal;
+}
+
+@font-face {
+  font-family: 'Satoshi-Medium';
+  src: url('./fonts/WEB/Satoshi-Medium.woff2') format('woff2'),
+       url('./fonts/WEB/Satoshi-Medium.woff') format('woff'),
+       url('./fonts/WEB/Satoshi-Medium.ttf') format('truetype');
+       font-weight: 900;
+       font-display: swap;
+       font-style: normal;
+}
+
+@font-face {
+  font-family: 'Satoshi-Black';
+  src: url('./fonts/WEB/Satoshi-Black.woff2') format('woff2'),
+       url('./fonts/WEB/Satoshi-Black.woff') format('woff'),
+       url('./fonts/WEB/Satoshi-Black.ttf') format('truetype');
+       font-weight: 900;
+       font-display: swap;
+       font-style: normal;
+}
+

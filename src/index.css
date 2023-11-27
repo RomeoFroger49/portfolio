@@ -1,0 +1,65 @@
+@import url("./satoshi.css");
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+
+
+
+@keyframes enterAnimationNav {
+  from {
+    transform: translateY(-100%);
+  }
+  to {
+    transform: translateY(0);
+  }
+}
+
+.animate-enter-nav {
+  animation: enterAnimationNav 1200ms ease forwards;
+}
+
+/* animation Hero */
+
+/* texte 1 */
+@keyframes enterAnimation1 {
+  from {
+    transform:translateX(100%);
+  }
+  to {
+    transform: translateX(0);
+  }
+}
+
+.animate-enter-1 {
+  animation: enterAnimation1 500ms ease-out forwards;
+}
+
+/* texte 2 */
+@keyframes enterAnimation2 {
+  from {
+    transform:  translateX(-200%);
+  }
+  to {
+    transform: translateX(0);
+  }
+}
+
+.animate-enter-2 {
+  animation: enterAnimation2 500ms ease-out forwards 400ms;
+}
+
+/* texte 3 */
+@keyframes enterAnimation3 {
+   from {
+    transform:  translateX(100%);
+  }
+  to {
+    transform: translateX(0);
+  }
+}
+
+.animate-enter-3 {
+  animation: enterAnimation3 500ms ease-out forwards 800ms;
+}
