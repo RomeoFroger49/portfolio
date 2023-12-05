@@ -4,14 +4,15 @@
 @tailwind utilities;
 
 /* hide cursor */
-html {
+html, a {
   scroll-behavior: smooth;
   cursor: none;
 }
 
-a {
-  cursor: none;
+body {
+  overflow-x: hidden;
 }
+
 
 
 
@@ -76,4 +77,28 @@ a {
 /* texte contouring */
 .text-contour {
   text-shadow: -3px -3px 0 #fff, 3px -3px 0 , -3px 3px 0 #fff, 3px 3px 0 #fff;
+}
+
+/* scroll typo animation*/
+@keyframes scrollTypoAnimation {
+  0% {
+    transform: scaleX(0.1) translateX(0%);
+    transform-origin: left;
+  }
+  50% {
+    transform: scaleX(1) translateX(0);
+    transform-origin: left;
+  }
+  75% {
+    transform: scaleX(0.1) translateX(100%) ;
+    transform-origin: right;
+  }
+  100% {
+    transform: scaleX(0.1) translateX(0);
+    transform-origin: left;
+  }
+}
+
+.scroll-typo-animation {
+  animation: scrollTypoAnimation 2s  infinite;
 }

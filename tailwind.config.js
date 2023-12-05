@@ -6,7 +6,6 @@ export default {
       base: [
         "1rem",
         {
-          lineHeight: "2rem",
           letterSpacing: "-0.01em",
           fontWeight: "500",
         },
@@ -14,7 +13,6 @@ export default {
       md: [
         "1.438rem",
         {
-          lineHeight: "2rem",
           letterSpacing: "-0.01em",
           fontWeight: "500",
         },
@@ -22,7 +20,6 @@ export default {
       lg: [
         "2rem",
         {
-          lineHeight: "2.25rem",
           letterSpacing: "-0.02em",
           fontWeight: "700",
         },
@@ -30,7 +27,6 @@ export default {
       xl: [
         "2.2rem",
         {
-          lineHeight: "2.25rem",
           letterSpacing: "-0.02em",
           fontWeight: "700",
         },
@@ -38,7 +34,6 @@ export default {
       "2xl": [
         "4rem",
         {
-          lineHeight: "2.25rem",
           letterSpacing: "-0.02em",
           fontWeight: "700",
         },
@@ -46,7 +41,6 @@ export default {
       "4xl": [
         "5rem",
         {
-          lineHeight: "2.25rem",
           letterSpacing: "-0.02em",
           fontWeight: "700",
         },
@@ -54,7 +48,6 @@ export default {
       "8xl": [
         "8rem",
         {
-          lineHeight: "2.25rem",
           letterSpacing: "-0.02em",
           fontWeight: "700",
         },
@@ -68,16 +61,33 @@ export default {
     colors: {
       text: "#091c25",
       background: "#ffffff",
-      primary: "#184d67",
-      secondary: "#c9e5f2",
-      accent: "#2e91c2",
+      primary: {
+        100: "#fffdd0",
+        200: "#fdfbd5",
+        300: "#fbf9da",
+        400: "#f9f7df",
+        500: "#f7f5e4",
+        600: "#f5f3e9",
+        700: "#f3f1ee",
+        800: "#f1eff3",
+        900: "#efedf8",
+      },
     },
 
     extend: {
       height: {
+        0.5: "0.125rem",
+        ///// positif high
         64: "14rem",
         128: "36rem",
         256: "47rem",
+        ///// ratio
+        "q-full": "90vh",
+        "9/10": "90%",
+      },
+      lineHeight: {
+        "extra-loose": "2.5",
+        12: "3rem",
       },
     },
   },

@@ -11,7 +11,7 @@ export default function MouseCursor() {
     return (
       <div
         id="cursor"
-        className="absolute w-6 h-6 rounded-full bg-accent pointer-events-none"
+        className="z-50 absolute w-4 h-4 rounded-full bg-primary-300 pointer-events-none hidden xl:block"
       />
     );
 }

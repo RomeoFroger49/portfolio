@@ -5,8 +5,8 @@ export default function Navbar() {
   const navLinks = ["projects", "me", "contact"];
 
   return (
-    <nav className="navbar flex justify-between pb-4 sm:text-md text-xs transition scale-0 animate-enter-nav">
-      <a className="navbar-brand font-satoshiBold text-primary" href="#">
+    <nav className="navbar sticky flex justify-between pb-4 sm:text-md text-xs transition scale-0 animate-enter-nav">
+      <a className="navbar-brand font-satoshiBold text-primary-900" href="#">
         Roméo
       </a>
       <div className="flex w-1/2 justify-evenly font-satoshiMedium">
