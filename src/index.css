@@ -3,10 +3,19 @@
 @tailwind components;
 @tailwind utilities;
 
+/* hide cursor */
+html {
+  scroll-behavior: smooth;
+  cursor: none;
+}
+
+a {
+  cursor: none;
+}
 
 
 
-
+/* animation Nav */
 @keyframes enterAnimationNav {
   from {
     transform: translateY(-100%);
@@ -62,4 +71,9 @@
 
 .animate-enter-3 {
   animation: enterAnimation3 500ms ease-out forwards 800ms;
+}
+
+/* texte contouring */
+.text-contour {
+  text-shadow: -3px -3px 0 #fff, 3px -3px 0 , -3px 3px 0 #fff, 3px 3px 0 #fff;
 }

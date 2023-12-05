@@ -1,19 +1,19 @@
-import { useState } from "react";
 import Navbar from "./components/Navbar/Navbar";
 import Hero from "./components/Hero";
+import MouseCursor from "./components/MouseCursor";
 
 function App() {
-  const [count, setCount] = useState(0);
 
   return (
-    <body className="m-10 sm:mx-16">
+    < >
       <header>
         <Navbar />
       </header>
-      <main>
+      <main className="relative">
         <Hero />
+        <MouseCursor />
       </main>
-    </body>
+    </>
   );
 }
 

@@ -2,7 +2,6 @@
 export default {
   content: ["./index.html", "./src/**/*.{js,ts,jsx,tsx}"],
   theme: {
- 
     fontSize: {
       base: [
         "1rem",
@@ -67,14 +66,16 @@ export default {
       satoshiBlack: ["Satoshi-Black"],
     },
     colors: {
-      text: "#000000",
+      text: "#091c25",
       background: "#ffffff",
-      primary: "#1747b0",
-      secondary: "#a9c1f4",
-      accent: "#184bb9",
+      primary: "#184d67",
+      secondary: "#c9e5f2",
+      accent: "#2e91c2",
     },
+
     extend: {
       height: {
+        64: "14rem",
         128: "36rem",
         256: "47rem",
       },
