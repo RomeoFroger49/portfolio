@@ -39,12 +39,12 @@ export default function SectionTexte() {
 
   return (
     <section
-      className="mb-16 h-screen text-center flex items-center"
+      className="mb-16 h-screen text-center flex items-center pt-12"
       id="projects"
       content="presentation"
     >
       <p
-        className="xl:text-2xl sm:text-xl  text-primary-300 leading-[3.5rem]"
+        className="xl:text-2xl text-lg  text-primary-300 sm:leading-[5rem] leading-[3rem]"
         ref={sectionRef}
       >
         Passionate explorer in the realm of front-end development, Roméo Froger,
