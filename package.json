@@ -2,7 +2,7 @@
   "name": "portfolio",
   "private": true,
   "version": "0.0.0",
-  "homepage": "https://romeofroger49.github.io/RomeoFroger49.portfolio.io/",
+  "homepage": "https://romeofroger49.github.io/RomeoFroger49.portfolio.io",
   "type": "module",
   "scripts": {
    "predeploy": "npm run build",
