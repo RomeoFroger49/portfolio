@@ -57,27 +57,9 @@ body {
 }
 
 .animate-enter-2 {
-  animation: enterAnimation2 500ms ease-out forwards 400ms;
+  animation: enterAnimation2 500ms ease-out forwards 2000ms;
 }
 
-/* texte 3 */
-@keyframes enterAnimation3 {
-   from {
-    transform:  translateX(100%);
-  }
-  to {
-    transform: translateX(0);
-  }
-}
-
-.animate-enter-3 {
-  animation: enterAnimation3 500ms ease-out forwards 800ms;
-}
-
-/* texte contouring */
-.text-contour {
-  text-shadow: -3px -3px 0 #fff, 3px -3px 0 , -3px 3px 0 #fff, 3px 3px 0 #fff;
-}
 
 /* scroll typo animation*/
 @keyframes scrollTypoAnimation {

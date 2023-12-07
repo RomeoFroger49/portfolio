@@ -46,9 +46,9 @@ export default {
         },
       ],
       "8xl": [
-        "8rem",
+        "7rem",
         {
-          letterSpacing: "-0.02em",
+          letterSpacing: "-0.03em",
           fontWeight: "700",
         },
       ],
