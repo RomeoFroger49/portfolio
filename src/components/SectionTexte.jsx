@@ -44,7 +44,7 @@ export default function SectionTexte() {
       content="presentation"
     >
       <p
-        className="xl:text-2xl text-lg  text-primary-300 sm:leading-[5rem] leading-[3rem]"
+        className="xl:text-2xl text-lg  text-primary sm:leading-[5rem] leading-[3rem]"
         ref={sectionRef}
       >
         Passionate explorer in the realm of front-end development, Roméo Froger,

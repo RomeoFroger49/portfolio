@@ -2,7 +2,7 @@ export default function NavLinks(name, key) {
   return (
     <div className="relative group">
       <a
-        className="  mx-1 pl-2 text-text font-satoshiMedium"
+        className="  mx-1 pl-2 text-text font-satoshiMedium z-10"
         href={`#${name.name}`}
         key={key}
       >

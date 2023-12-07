@@ -61,17 +61,7 @@ export default {
     colors: {
       text: "#000000",
       background: "#ffffff",
-      primary: {
-        100: "#fffdd0",
-        200: "#fdfbd5",
-        300: "#fbf9da",
-        400: "#f9f7df",
-        500: "#f7f5e4",
-        600: "#f5f3e9",
-        700: "#f3f1ee",
-        800: "#f1eff3",
-        900: "#efedf8",
-      },
+      primary: "#1049C1",
     },
 
     extend: {
