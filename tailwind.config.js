@@ -59,7 +59,7 @@ export default {
       satoshiBlack: ["Satoshi-Black"],
     },
     colors: {
-      text: "#091c25",
+      text: "#000000",
       background: "#ffffff",
       primary: {
         100: "#fffdd0",
