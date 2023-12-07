@@ -65,12 +65,12 @@ export default function Hero() {
         <h1
           ref={textRef}
           className="absolute xl:text-8xl lg:text-4xl sm:text-2xl text-xl
-          font-satoshiBlack xl:pr-12 sm:pr-4 "
+          font-satoshiBlack xl:pr-12 sm:pr-4 text-satoshiBlack"
         ></h1>
         <h1
           ref={text2Ref}
           className="absolute xl:text-2xl lg:text-xl sm:text-lg text-base
-          font-satoshiBlack xl:pr-12 sm:pr-4 "
+          font-satoshiBlack xl:pr-12 sm:pr-4 text-satoshiBlack"
         ></h1>
       </div>
 
