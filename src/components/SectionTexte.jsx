@@ -40,18 +40,15 @@ export default function SectionTexte() {
   return (
     <section
       className="mb-16 h-screen text-center flex items-center pt-12"
-      id="projects"
       content="presentation"
     >
       <p
-        className="xl:text-2xl text-lg  text-primary sm:leading-[5rem] leading-[3rem]"
+        className="xl:text-2xl text-lg font-satoshiMedium  text-primary sm:leading-[5rem] leading-[3rem]"
         ref={sectionRef}
       >
-        Passionate explorer in the realm of front-end development, Roméo Froger,
-        a third-year student in information sciences, shapes his journey with
-        overflowing creativity and growing expertise. Dive into my portfolio to
-        discover the intersection of my programming passion and innovative
-        vision for interactive design.
+        Roméo Froger, a third-year information sciences student, passionately
+        explores front-end development. Combining creativity and expertise, his
+        portfolio reflects an innovative vision for interactive design.
       </p>
     </section>
   );

@@ -2,7 +2,7 @@ import React from "react";
 import NavLinksButton from "./NavLinksButton";
 
 export default function Navbar() {
-  const navLinks = ["projects", "me", "contact"];
+  const navLinks = ["me","projects","contact"];
 
   return (
     <nav className="navbar sticky flex justify-between pb-4 sm:text-md text-[1.25rem] transition scale-0 animate-enter-nav">

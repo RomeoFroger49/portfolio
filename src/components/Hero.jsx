@@ -1,4 +1,4 @@
-import React, { useEffect, textRef } from "react";
+import React, { useEffect } from "react";
 import gsap from "gsap";
 import { TextPlugin } from "gsap/TextPlugin";
 
@@ -70,12 +70,12 @@ export default function Hero() {
         <div ref={divRef} className="absolute flex">
           <h1
             ref={textRef}
-            className=" xl:text-8xl lg:text-4xl sm:text-2xl text-xl
+            className=" xl:text-8xl lg:text-4xl sm:text-2xl text-lg
           font-satoshiBlack pr-2 sm:pr-6 text-satoshiBlack"
           ></h1>
           <h1
             ref={text2Ref}
-            className=" xl:text-8xl lg:text-4xl sm:text-2xl text-xl
+            className=" xl:text-8xl lg:text-4xl sm:text-2xl text-lg
           font-satoshiBlack pr-2 text-satoshiBlack text-primary"
           ></h1>
         </div>

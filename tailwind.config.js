@@ -18,16 +18,16 @@ export default {
         },
       ],
       lg: [
-        "2rem",
+        "1.7rem",
         {
-          letterSpacing: "-0.02em",
+          letterSpacing: "-0.03em",
           fontWeight: "700",
         },
       ],
       xl: [
-        "2.2rem",
+        "2.1rem",
         {
-          letterSpacing: "-0.02em",
+          letterSpacing: "-0.03em",
           fontWeight: "700",
         },
       ],
@@ -57,6 +57,8 @@ export default {
       satoshiMedium: ["Satoshi-Medium"],
       satoshiBold: ["Satoshi-Bold"],
       satoshiBlack: ["Satoshi-Black"],
+      satoshiRegular: ["Satoshi-Regular"],
+      satoshiLight: ["Satoshi-Light"],
     },
     colors: {
       text: "#000000",
