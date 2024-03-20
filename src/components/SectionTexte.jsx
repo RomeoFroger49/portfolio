@@ -28,7 +28,7 @@ export default function SectionTexte() {
           });
         }
       },
-      { threshold: 0.5 } // Adjust the threshold as needed
+      { threshold: 0.5 }
     );
 
     observer.observe(section);
@@ -39,16 +39,15 @@ export default function SectionTexte() {
 
   return (
     <section
-      className="mb-16 h-screen text-center flex items-center pt-12"
+      className="mb-16 h-screen text-left flex items-center pt-12"
       content="presentation"
     >
       <p
-        className="xl:text-2xl text-lg font-satoshiMedium  text-primary sm:leading-[5rem] leading-[3rem]"
+        className="xl:text-4xl text-lg font-satoshiMedium  text-[rgb(209,209,200)] sm:leading-[5rem] leading-[3rem]"
         ref={sectionRef}
       >
         Roméo Froger, a third-year information sciences student, passionately
-        explores front-end development. Combining creativity and expertise, his
-        portfolio reflects an innovative vision for interactive design.
+        explores front-end development. Combining creativity and expertise.
       </p>
     </section>
   );

@@ -26,7 +26,7 @@ export default function MouseCursor() {
   return (
     <div
       id="cursor"
-      className="z-50 absolute rounded-full pointer-events-none hidden xl:block w-8 h-8 border-2 border-primary transition duration-[900] ease-in-out "
+      className="z-50 absolute rounded-full pointer-events-none hidden xl:block w-8 h-8 border-2 border-primary transition duration-300 ease-in-out "
     />
   );
 }
