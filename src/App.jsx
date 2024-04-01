@@ -3,7 +3,9 @@ import Hero from "./components/Hero";
 import MouseCursor from "./components/MouseCursor";
 import SectionTexte from "./components/SectionTexte";
 import Me from "./components/AboutComponent/Me";
-import  ButtonUp  from "./components/ButtonUp";
+import ButtonUp from "./components/ButtonUp";
+import ProjectDisplay from "./components/ProjectDisplay/ProjectDisplay";
+import Footer from "./components/Footer";
 
 function App() {
   return (
@@ -12,11 +14,13 @@ function App() {
         <Navbar />
       </header>
       <main className="relative ">
-        <MouseCursor />
-        <ButtonUp />
         <Hero />
         <SectionTexte />
         <Me />
+        <ProjectDisplay />
+        <Footer />
+        <MouseCursor />
+        <ButtonUp />
       </main>
     </>
   );

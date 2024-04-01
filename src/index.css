@@ -4,7 +4,12 @@
 @tailwind utilities;
 
 /* hide cursor */
-html, a, button {
+html,
+a,
+button,
+input,
+textarea,
+label {
   scroll-behavior: smooth;
   cursor: none;
 }
@@ -13,13 +18,12 @@ body {
   overflow-x: hidden;
 }
 
- /* pointer affect on hover */
+/* pointer affect on hover */
 .hovered {
   height: 1rem;
   width: 1rem;
-  background-color: #1049C1;
+  background-color: #1049c1;
 }
-
 
 /* animation Nav */
 @keyframes enterAnimationNav {
@@ -62,7 +66,7 @@ body {
     transform-origin: left;
   }
   75% {
-    transform: scaleX(0.1) translateX(100%) ;
+    transform: scaleX(0.1) translateX(100%);
     transform-origin: right;
   }
   100% {
@@ -72,7 +76,7 @@ body {
 }
 
 .scroll-typo-animation {
-  animation: scrollTypoAnimation 2s  infinite;
+  animation: scrollTypoAnimation 2s infinite;
 }
 
 /* section layer */
@@ -84,7 +88,6 @@ body {
   left: 0;
   width: 100%;
   height: 50vh;
-  background-color: #1049C1;
+  background-color: #1049c1;
   z-index: -1;
-  
 }

@@ -25,7 +25,7 @@ export default {
         },
       ],
       xl: [
-        "2.1rem",
+        "2rem",
         {
           letterSpacing: "-0.03em",
           fontWeight: "700",
@@ -64,6 +64,7 @@ export default {
       text: "#000000",
       background: "#ffffff",
       primary: "#1049C1",
+      grey: "#D1D1C8",
     },
 
     extend: {

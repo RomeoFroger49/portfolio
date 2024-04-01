@@ -8,6 +8,7 @@ export default function SectionTexte() {
     const section = sectionRef.current;
     const body = document.querySelector("body");
     const Hero = document.querySelector("#spanScroll");
+    const texti = document.querySelectorAll("#i-section");
 
     const observer = new IntersectionObserver(
       ([entry]) => {
@@ -20,11 +21,19 @@ export default function SectionTexte() {
             display: "none",
             duration: 0.5,
           });
+          gsap.to(texti, {
+            color: "#1049C1",
+            duration: 1,
+          });
         } else {
           gsap.to(body, { backgroundColor: "transparent", duration: 1 });
           gsap.to(Hero, {
             display: "flex",
             duration: 0.5,
+          });
+          gsap.to(texti, {
+            color: "rgb(209,209,200)",
+            duration: 1,
           });
         }
       },
@@ -33,7 +42,6 @@ export default function SectionTexte() {
 
     observer.observe(section);
 
-    // Cleanup the observer when the component is unmounted
     return () => observer.disconnect();
   }, []);
 
@@ -46,8 +54,9 @@ export default function SectionTexte() {
         className="xl:text-4xl text-lg font-satoshiMedium  text-[rgb(209,209,200)] sm:leading-[5rem] leading-[3rem]"
         ref={sectionRef}
       >
-        Roméo Froger, a third-year information sciences student, passionately
-        explores front-end development. Combining creativity and expertise.
+        <i id="i-section">Roméo Froger</i>, a third-year information sciences
+        student, passionately explores <i id="i-section">Web development</i>.
+        Combining creativity and expertise.
       </p>
     </section>
   );

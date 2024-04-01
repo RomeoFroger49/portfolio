@@ -1,9 +1,6 @@
 import React, { useRef, useEffect, useState } from "react";
 
 export default function MouseCursor() {
-
-  
-
   const onMouseMove = (e) => {
     const cursor = document.querySelector("#cursor");
     cursor.style.left = e.pageX - 75 + "px";
@@ -20,13 +17,57 @@ export default function MouseCursor() {
         cursor.classList.remove("hovered");
       });
     });
+
+    document.querySelectorAll("button").forEach((link) => {
+      link.addEventListener("mouseenter", () => {
+        const cursor = document.querySelector("#cursor");
+        cursor.classList.add("hovered");
+      });
+      link.addEventListener("mouseleave", () => {
+        const cursor = document.querySelector("#cursor");
+        cursor.classList.remove("hovered");
+      });
+    });
+
+    document.querySelectorAll("input").forEach((link) => {
+      link.addEventListener("mouseenter", () => {
+        const cursor = document.querySelector("#cursor");
+        cursor.classList.add("hovered");
+      });
+      link.addEventListener("mouseleave", () => {
+        const cursor = document.querySelector("#cursor");
+        cursor.classList.remove("hovered");
+      });
+    });
+
+    document.querySelectorAll("textarea").forEach((link) => {
+      link.addEventListener("mouseenter", () => {
+        const cursor = document.querySelector("#cursor");
+        cursor.classList.add("hovered");
+      });
+      link.addEventListener("mouseleave", () => {
+        const cursor = document.querySelector("#cursor");
+        cursor.classList.remove("hovered");
+      });
+    });
+
+    document.querySelectorAll("svg").forEach((link) => {
+      link.addEventListener("mouseenter", () => {
+        const cursor = document.querySelector("#cursor");
+        cursor.classList.add("hovered");
+      });
+      link.addEventListener("mouseleave", () => {
+        const cursor = document.querySelector("#cursor");
+        cursor.classList.remove("hovered");
+      });
+    });
   }, []);
 
   document.addEventListener("mousemove", onMouseMove);
   return (
     <div
       id="cursor"
-      className="z-50 absolute rounded-full pointer-events-none hidden xl:block w-8 h-8 border-2 border-primary transition duration-300 ease-in-out "
+      className="z-50  absolute rounded-full pointer-events-none hidden xl:block w-8 h-8 border-2 border-primary transition duration-300 ease-in-out "
     />
   );
 }

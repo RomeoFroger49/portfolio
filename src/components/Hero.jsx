@@ -14,7 +14,7 @@ export default function Hero() {
     const sub = subText.current;
     const div = divRef.current;
     const phrase = "Hello, I'm";
-    const mots = [" a developer", " a designer", " Roméo"];
+    const mots = [" a developer", " a passionate", " Roméo"];
     const newPhrase = "Welcome to my portfolio ";
 
     gsap
@@ -67,25 +67,23 @@ export default function Hero() {
   return (
     <section id="hero" content="hero" className="relative h-q-full">
       <div className="relative h-full flex flex-col items-center justify-center gap-3 xl:gap-[10rem] xl:leading-10 lg:leading-8 sm:leading-4 leading-3">
-        <div ref={divRef} className="absolute flex">
+        <div
+          ref={divRef}
+          className="absolute flex xl:text-8xl lg:text-4xl sm:text-2xl text-xl font-satoshiBlack"
+        >
           <h1
             ref={textRef}
-            className=" xl:text-8xl lg:text-4xl sm:text-2xl text-lg
-          font-satoshiBlack pr-2 sm:pr-6 text-satoshiBlack"
+            className=" 
+           pr-2 sm:pr-6"
           ></h1>
-          <h1
-            ref={text2Ref}
-            className=" xl:text-8xl lg:text-4xl sm:text-2xl text-lg
-          font-satoshiBlack pr-2 text-satoshiBlack text-primary"
-          ></h1>
+          <h1 ref={text2Ref} className="  pr-2  text-primary"></h1>
         </div>
 
         <h1
           ref={subText}
           className=" xl:text-2xl lg:text-xl sm:text-lg text-base
-          font-satoshiBlack xl:pr-12 sm:pr-4 text-satoshiBlack p-4"
-        >
-        </h1>
+          font-satoshiBlack xl:pr-12 sm:pr-4 text-satoshiBlack p-4 absolute top-[40%] md:top-[50%] md:block"
+        ></h1>
       </div>
 
       <div
