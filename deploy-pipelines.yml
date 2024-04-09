@@ -8,7 +8,7 @@ steps:
 - script: |
     npm install
     npm run build
-    mv build www
+    mv dist www
     for file in www/*; do
       curl --ftp-create-dirs -T $file -u $FTP_USER:$FTP_PWD ftps://$FTP_HOST/www/$(basename $file)
     done
