@@ -10,7 +10,7 @@ steps:
     npm run build
     mv dist www
     for file in www/*; do
-      curl --ftp-create-dirs -T $file -u $FTP_USER:$FTP_PWD ftps://$FTP_HOST/www/$(basename $file)
+      curl --ftp-create-dirs -T $file -u $FTP_USER:$FTP_PWD ftp://$FTP_HOST:21/www/$(basename $file)
     done
   displayName: 'Upload Directory via FTP on macOS'
   env:
