@@ -6,14 +6,10 @@ pool: my-agent-pool
 steps:
 - checkout: self
 - script: |
-    apt-get update && apt-get install -y ftp
-    FTP_SCRIPT="open $FTP_SERVER
-    user $FTP_USERNAME $FTP_PASSWORD
-    binary
-    mput www/*
-    bye"
-    echo "$FTP_SCRIPT" | ftp -inv
-  displayName: 'Upload Directory via FTP'
+    for file in build/*; do
+      curl --ftp-create-dirs -T $file -u $FTP_USERNAME:$FTP_PASSWORD ftp://$FTP_SERVER/path/to/remote/directory/$(basename $file)
+    done
+  displayName: 'Upload Directory via FTP on macOS'
   env:
     FTP_SERVER: $(FTP_SERVER)
     FTP_USERNAME: $(FTP_USERNAME)
