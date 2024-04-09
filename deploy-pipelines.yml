@@ -6,7 +6,10 @@ pool: my-agent-pool
 steps:
 - checkout: self
 - script: |
-    for file in ./www/*; do
+    npm install
+    npm run build
+    mv build www
+    for file in www/*; do
       curl --ftp-create-dirs -T $file -u $FTP_USER:$FTP_PWD ftps://$FTP_HOST/www/$(basename $file)
     done
   displayName: 'Upload Directory via FTP on macOS'
