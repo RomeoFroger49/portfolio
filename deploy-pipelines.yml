@@ -6,8 +6,8 @@ pool: my-agent-pool
 steps:
 - checkout: self
 - script: |
-    for file in build/*; do
-      curl --ftp-create-dirs -T $file -u $FTP_USERNAME:$FTP_PASSWORD ftp://$FTP_SERVER/path/to/remote/directory/$(basename $file)
+    for file in www/*; do
+      curl --ftp-create-dirs -T $file -u $FTP_USER:$FTP_PWD ftps://$FTP_HOST/$(basename $file)
     done
   displayName: 'Upload Directory via FTP on macOS'
   env:
