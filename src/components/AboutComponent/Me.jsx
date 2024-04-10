@@ -15,8 +15,8 @@ export default function Me() {
 
         <div className="px-6 relative h-auto text-center " id="container">
           <div className="flex flex-col sticky gap-8 top-0">
-            <h1 className=" text-xl font-satoshiMedium">Hello,</h1>
-            <h2 className="font-satoshiMedium text-md">
+            <h1 className=" text-xl font-sa">Hello,</h1>
+            <h2 className="font-satoshiBlack text-md">
               I'm <i className="text-primary">Roméo Froger</i>, I am a
               third-year information sciences student at the{" "}
               <i className="font-satoshiBlack">Catholic University of Lille</i>.
