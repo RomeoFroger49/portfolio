@@ -13,6 +13,21 @@ steps:
   displayName: 'npm install & build www folder'
 
 - bash: |
+    FILES=$(curl -u $FTP_USERNAME:$FTP_PWD FTP_SERVER/www/assets/ | grep -E '.js|.css')
+    for line in $FILES; do
+      ftp -inv ftp://romeofu@ftp.cluster029.hosting.ovh.net <<EOF
+      user FTP_USERNAME FTP_PWD
+      delete www/assets/$line
+      bye
+      EOF
+      done
+  displayName: 'Delete preview .css & .js file'
+  env:
+    FTP_SERVER: $(FTP_HOST2)
+    FTP_USERNAME: $(FTP_USER)
+    FTP_PASSWORD: $(FTP_PWD)
+
+- bash: |
     for file in www/*; do 
       if [[ -d $file ]]; then 
         for subfile in $file/*; do 
