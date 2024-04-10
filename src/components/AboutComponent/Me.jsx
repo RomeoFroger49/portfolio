@@ -30,17 +30,17 @@ export default function Me() {
               company <i className="font-satoshiBlack">Sncf Connect & Tech</i>{" "}
               as a fullstack developer. I also worked on a project with a
               friend, a website for a company called{" "}
-              <i className="font-satoshiBlack">World Safety Power</i>.
+              <i className="font-satoshiBlack">World Safety Power</i>. That
+              includes working on the <i className="text-primary">front-end</i>{" "}
+              and <i className="text-primary">back-end</i> of the website.
             </h2>
 
             <h2 className="font-satoshiMedium text-md">
-              That includes working on the{" "}
-              <i className="text-primary">front-end</i> and{" "}
-              <i className="text-primary">back-end</i> of the website. I am
-              passionate about <i className="bg-primary">web development</i> and
-              I am always looking for new challenges. That's why after
-              discovering the world of fullstack development, I decided to start
-              learning <i className="bg-primary">Ops and DevOps</i>.
+              I am passionate about{" "}
+              <i className="bg-primary">web development</i> and I am always
+              looking for new challenges. That's why after discovering the world
+              of fullstack development, I decided to start learning{" "}
+              <i className="bg-primary">Ops and DevOps</i>.
             </h2>
           </div>
         </div>
