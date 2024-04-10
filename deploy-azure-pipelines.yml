@@ -12,13 +12,18 @@ steps:
     mv dist www
   displayName: 'npm install & build www folder'
 
-- bash: |
-    ftp -inv $FTP_SERVER << EOF
-        user $FTP_USERNAME $FTP_PASSWORD
-        cd www/assets
-        mdelete *
-        bye
-    EOF
+- task: Bash@3
+  inputs:
+    targetType: 'inline'
+    script: |
+      #!/bin/bash
+
+      ftp -inv $FTP_SERVER << EOF
+          user $FTP_SERVER $FTP_PASSWORD
+          cd www/assets
+          mdelete *
+          bye
+      EOF
   displayName: 'Delete assets folder'
   env:
     FTP_SERVER: $(FTP_HOST2)
