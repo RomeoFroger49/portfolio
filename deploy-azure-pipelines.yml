@@ -19,7 +19,7 @@ steps:
           cd www/assets
           mdelete *
           bye
-EOF
+      EOF
     displayName: "Delete files via FTP"
     env:
       FTP_SERVER: $(FTP_HOST2)
