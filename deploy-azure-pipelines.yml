@@ -13,6 +13,19 @@ steps:
   displayName: 'npm install & build www folder'
 
 - bash: |
+    ftp -inv FTP_SERVER <<EOF
+    user FTP_USERNAME FTP_PASSWORD
+    mdelete www/assets/*
+    rmdir www/assets
+    bye
+    EOF
+  displayName: 'Delete assets folder'
+  env:
+    FTP_SERVER: $(FTP_HOST2)
+    FTP_USERNAME: $(FTP_USER)
+    FTP_PASSWORD: $(FTP_PWD)
+
+- bash: |
     for file in www/*; do 
       if [[ -d $file ]]; then 
         for subfile in $file/*; do 
