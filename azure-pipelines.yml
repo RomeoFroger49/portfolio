@@ -1,5 +1,5 @@
 trigger:
-- main
+- azure-pipelines
 
 pool: my-agent-pool
 
@@ -10,10 +10,10 @@ steps:
     npm run build
     mv dist www
     for file in www/*; do
-      curl --ftp-create-dirs -T $file -u $FTP_USER:$FTP_PWD ftp://$FTP_HOST:21/www/$(basename $file)
+      curl --ftp-create-dirs -T $file -u $FTP_USERNAME:$env:FTP_PASSWORD ftp://$FTP_SERVER:21/www/$(basename $file)
     done
   displayName: 'Upload Directory via FTP on macOS'
   env:
-    FTP_SERVER: $(FTP_SERVER)
-    FTP_USERNAME: $(FTP_USERNAME)
-    FTP_PASSWORD: $(FTP_PASSWORD)
+    FTP_SERVER: $(FTP_HOST)
+    FTP_USERNAME: $(FTP_USER)
+    FTP_PASSWORD: $(FTP_PWD)
