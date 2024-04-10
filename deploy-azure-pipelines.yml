@@ -16,12 +16,12 @@ steps:
     FILES=$(curl -u $FTP_USERNAME:$FTP_PASSWORD $FTP_SERVER/www/assets/)
 
     for line in $FILES; do
-      if (( "$line" == *.js || "$line" == *.css )); then
+      if (( "$line" == '*.js' || "$line" == '*.css' )); then
         ftp -inv $FTP_SERVER <<EOF
-        quote USER $FTP_USERNAME 
-        quote PASS $FTP_PASSWORD
-        delete www/assets/$line
-        bye
+          quote USER $FTP_USERNAME 
+          quote PASS $FTP_PASSWORD
+          delete www/assets/$line
+          bye
         EOF
       fi
     done
