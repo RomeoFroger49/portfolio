@@ -69,7 +69,7 @@ export default function Hero() {
       <div className="relative h-full flex flex-col items-center justify-center gap-3 xl:gap-[10rem] xl:leading-10 lg:leading-8 sm:leading-4 leading-3">
         <div
           ref={divRef}
-          className="absolute flex xl:text-8xl lg:text-4xl sm:text-2xl text-xl font-satoshiBlack"
+          className="absolute flex xl:text-8xl lg:text-4xl sm:text-2xl text-lg font-satoshiBlack"
         >
           <h1
             ref={textRef}

@@ -163,7 +163,7 @@ export default function Skills() {
               onClick={handleDownload}
               href={cv}
               download=""
-              className="text-center font-satoshiMedium border-2 :w-1/3 w-1/2 border-primary hover:bg-primary hover:text-white py-2 px-4 rounded-full md:text-md text-sm"
+              className="text-center font-satoshiMedium border-2 :w-1/3 w-1/2 hover:border-primary bg-primary hover:bg-background  hover:text-primary text-background py-2 px-4 rounded-full md:text-md text-sm"
             >
               {download ? <CircularProgress size={28} /> : "Download"}
             </a>

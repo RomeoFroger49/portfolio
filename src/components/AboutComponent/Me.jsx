@@ -11,13 +11,13 @@ export default function Me() {
       </div>
 
       <div className="flex lg:flex-row flex-col pt-4 sm:p-12 z-[-1]">
-        <img className="sm:w-1/2 h-1/2 mx-auto" src={image} alt="" />
+        <img className="sm:w-1/2 sm:mx-auto" src={image} alt="" />
 
         <div className="px-6 relative h-auto text-center " id="container">
           <div className="flex flex-col sticky gap-8 top-0">
-            <h1 className=" text-xl font-satoshiBold">About Me</h1>
+            <h1 className=" text-xl font-satoshiBold">Hello,</h1>
             <h2 className="font-satoshiMedium text-md">
-              Hello I'm <i className="text-primary">Roméo Froger</i>, I am a
+              I'm <i className="text-primary">Roméo Froger</i>, I am a
               third-year information sciences student at the{" "}
               <i className="font-satoshiBlack">Catholic University of Lille</i>.
               I'm going to start my first year of ingeneering school,{" "}

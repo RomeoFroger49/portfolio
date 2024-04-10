@@ -27,7 +27,7 @@ export default {
       xl: [
         "2rem",
         {
-          letterSpacing: "-0.03em",
+          letterSpacing: "-0.04em",
           fontWeight: "700",
         },
       ],

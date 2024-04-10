@@ -6,7 +6,7 @@ export default function Footer() {
       id="contact"
       className="footer flex flex-col gap-2 items-center border-t-2 border-primary text-white p-4 pb-0 font-satoshiMedium"
     >
-      <p className="text-center pb-1">© 2024 Roméo Froger - Tous droits réservés</p>
+      <p className="text-center pb-1">© 2024 Roméo Froger - Copyright</p>
       <div className="flex justify-evenly gap-8 flex-wrap">
         <h2>Contact:</h2>
         <a
