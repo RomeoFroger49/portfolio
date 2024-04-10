@@ -15,12 +15,14 @@ steps:
 - bash: |
     FILES=$(curl -u $FTP_USERNAME:$FTP_PASSWORD $FTP_SERVER/www/assets/)
     for line in $FILES; do
-      ftp -inv $FTP_SERVER <<EOF
-      user FTP_USERNAME FTP_PASSWORD
-      delete www/assets/$line
-      bye
-      EOF
-      done
+      if [[ "$line" == *.js || "$line" == *.css ]]; then
+        ftp -inv $FTP_SERVER <<EOF
+user $FTP_USERNAME $FTP_PASSWORD
+delete www/assets/$line
+bye
+EOF
+      fi
+    done
   displayName: 'Delete preview .css & .js file'
   env:
     FTP_SERVER: $(FTP_HOST2)
