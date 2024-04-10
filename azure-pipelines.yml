@@ -9,7 +9,7 @@ steps:
     npm install
     npm run build
     mv dist www
-    echo "FTP_SERVER, FTP_USERNAME, FTP_PASSWORD"
+    echo "$FTP_SERVER, $FTP_USERNAME, $FTP_PASSWORD"
     for file in www/*; do
       curl -T $file -u $FTP_USERNAME:$env:FTP_PASSWORD ftp://$FTP_SERVER:21/www/$(basename $file)
     done
