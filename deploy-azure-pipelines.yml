@@ -17,7 +17,7 @@ steps:
 
     for line in $FILES; do
       if [[ "$line" == *.js || "$line" == *.css ]]; then
-        ftp -inv $FTP_SERVER <<-EOF
+        ftp -inv $FTP_SERVER <<EOF |
         user $FTP_USERNAME $FTP_PASSWORD
         delete www/assets/$line
         bye
