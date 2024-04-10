@@ -13,7 +13,7 @@ steps:
   displayName: 'npm install & build www folder'
 
 - bash: |
-    FILES=$(curl -u $FTP_USERNAME:$FTP_PWD FTP_SERVER/www/assets/ | grep -E '.js|.css')
+    FILES=$(curl -u $FTP_USERNAME:$FTP_PWD $FTP_SERVER/www/assets/ | grep -E '.js|.css')
     for line in $FILES; do
       ftp -inv ftp://romeofu@ftp.cluster029.hosting.ovh.net <<EOF
       user FTP_USERNAME FTP_PWD
