@@ -13,7 +13,7 @@ steps:
   displayName: 'npm install & build www folder'
 
 - bash: |
-    FILES=$(curl -u $FTP_USERNAME:$FTP_PWD $FTP_SERVER/www/assets/)
+    FILES=$(curl -u $FTP_USERNAME:$FTP_PASSWORD $FTP_SERVER/www/assets/)
     for line in $FILES; do
       ftp -inv $FTP_SERVER <<EOF
       user FTP_USERNAME FTP_PASSWORD
