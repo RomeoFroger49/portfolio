@@ -13,9 +13,9 @@ steps:
   displayName: 'npm install & build www folder'
 
 - bash: |
-    FILES=$(curl -u $FTP_USERNAME:$FTP_PWD $FTP_SERVER/www/assets/ | grep -E '.js|.css')
+    FILES=$(curl -u $FTP_USERNAME:$FTP_PWD $FTP_SERVER/www/assets/)
     for line in $FILES; do
-      ftp -inv ftp://romeofu@ftp.cluster029.hosting.ovh.net <<EOF
+      ftp -inv $FTP_SERVER <<EOF
       user FTP_USERNAME FTP_PASSWORD
       delete www/assets/$line
       bye
