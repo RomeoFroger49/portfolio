@@ -13,8 +13,8 @@ steps:
   displayName: 'npm install & build www folder'
 
 - bash: |
-    ftp -inv FTP_SERVER <<EOF
-    user FTP_USERNAME FTP_PASSWORD
+    ftp -inv $FTP_SERVER <<EOF
+    user $FTP_USERNAME $FTP_PASSWORD
     mdelete www/assets/*
     bye
     EOF
