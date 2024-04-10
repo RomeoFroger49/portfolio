@@ -16,7 +16,6 @@ steps:
     ftp -inv FTP_SERVER <<EOF
     user FTP_USERNAME FTP_PASSWORD
     mdelete www/assets/*
-    rmdir www/assets
     bye
     EOF
   displayName: 'Delete assets folder'
