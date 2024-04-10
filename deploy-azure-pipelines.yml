@@ -13,18 +13,18 @@ steps:
   displayName: 'npm install & build www folder'
 
 - task: Bash@3
+  displayName: 'Delete assets folder'
   inputs:
     targetType: 'inline'
     script: |
       #!/bin/bash
 
-      ftp -inv $FTP_SERVER << EOF
-          user $FTP_SERVER $FTP_PASSWORD
-          cd www/assets
-          mdelete *
-          bye
+        ftp -inv $FTP_SERVER << EOF
+            user $FTP_SERVER $FTP_PASSWORD
+            cd www/assets
+            mdelete *
+            bye
       EOF
-  displayName: 'Delete assets folder'
   env:
     FTP_SERVER: $(FTP_HOST2)
     FTP_USERNAME: $(FTP_USER)
