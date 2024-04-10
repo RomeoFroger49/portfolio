@@ -19,11 +19,11 @@ steps:
     script: |
       #!/bin/bash
 
-        ftp -inv $FTP_SERVER << EOF
-            user $FTP_SERVER $FTP_PASSWORD
-            cd www/assets
-            mdelete *
-            bye
+      ftp -inv $FTP_SERVER <<-EOF
+          user $FTP_SERVER $FTP_PASSWORD
+          cd www/assets
+          mdelete *
+          bye
       EOF
   env:
     FTP_SERVER: $(FTP_HOST2)
