@@ -14,9 +14,9 @@ steps:
 
 - bash: |
     ftp -inv $FTP_SERVER <<EOF
-    user $FTP_USERNAME $FTP_PASSWORD
-    mdelete www/assets/*
-    bye
+      user $FTP_USERNAME $FTP_PASSWORD
+      mdelete www/assets/*
+      bye
     EOF
   displayName: 'Delete assets folder'
   env:
