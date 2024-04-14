@@ -13,9 +13,8 @@ export default function Me() {
       <div className="flex lg:flex-row flex-col pt-4 sm:p-12 z-[-1]">
         <img className="sm:w-1/2 sm:mx-auto" src={image} alt="" />
 
-        <div className="px-6 relative h-auto text-center " id="container">
-          <div className="flex flex-col sticky gap-8 top-0">
-            <h1 className=" text-xl font-satoshiMedium">Hello,</h1>
+        <div className="px-6 relative h-auto text-justify " id="container">
+          <div className="flex flex-col sticky gap-8 top-0 sm:mt-12">
             <h2 className="font-satoshiMedium text-md">
               I'm <i className="text-primary">Roméo Froger</i>, I am a
               third-year information sciences student at the{" "}
