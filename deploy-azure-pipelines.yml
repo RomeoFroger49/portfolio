@@ -15,11 +15,11 @@ steps:
   - task: FtpUpload@2
     inputs:
       credentialsOption: 'inputs'
-      serverUrl: 'ftp.cluster029.hosting.ovh.net'
-      username: 'romeofu'
-      password: '180403Romeo'
+      serverUrl: $(FTP_HOST)
+      username: $(FTP_USER)
+      password: $(FTP_PWD)
       implicitFTPS: true
-      rootDirectory: 'www'
+      rootDirectory: './www'
       filePatterns: '**'
       remoteDirectory: '/upload/$(Build.BuildId)/'
       clean: false
