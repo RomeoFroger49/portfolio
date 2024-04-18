@@ -2,7 +2,7 @@ trigger:
   - main
 
 pool:
-  vmImage: ubuntu-latest
+  name: my-agent-pool
 
 steps:
   - checkout: self
@@ -10,19 +10,21 @@ steps:
   - script: |
       npm install
       npm run build
+      mv dist www
     displayName: "npm install & build www folder"
 
-  - task: FtpUpload@2
-    inputs:
-      credentialsOption: 'inputs'
-      serverUrl: $(FTP_HOST)
-      username: $(FTP_USER)
-      password: $(FTP_PWD)
-      implicitFTPS: true
-      rootDirectory: 'dist'
-      filePatterns: '**'
-      remoteDirectory: './www'
-      clean: false
-      cleanContents: false
-      preservePaths: true
-      trustSSL: false
+  - bash: |
+      for file in www/*; do 
+        if [[ -d $file ]]; then 
+          for subfile in $file/*; do 
+            curl -T $subfile -u $FTP_USERNAME:$FTP_PASSWORD $FTP_SERVER/www/assets/
+          done
+        else 
+          curl -T $file -u $FTP_USERNAME:$FTP_PASSWORD $FTP_SERVER/www/
+        fi
+      done
+    displayName: "Upload Directory via FTP on macOS"
+    env:
+      FTP_SERVER: $(FTP_HOST)
+      FTP_USERNAME: $(FTP_USER)
+      FTP_PASSWORD: $(FTP_PWD)
