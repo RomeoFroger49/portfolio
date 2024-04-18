@@ -19,10 +19,10 @@ steps:
       username: $(FTP_USER)
       password: $(FTP_PWD)
       implicitFTPS: true
-      rootDirectory: './build'
+      rootDirectory: 'dist'
       filePatterns: '**'
       remoteDirectory: './www'
       clean: false
       cleanContents: false
-      preservePaths: false
+      preservePaths: true
       trustSSL: false
