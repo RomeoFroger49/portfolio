@@ -9,4 +9,7 @@ export default defineConfig({
     jsxFactory: "h", // or your preferred JSX factory function
     jsxInject: `import 'react'`, // or the path to your React runtime
   },
+  build: {
+    outDir: "www",
+  },
 });

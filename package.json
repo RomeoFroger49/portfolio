@@ -10,7 +10,7 @@
     "preview": "vite preview"
   },
   "exports": {
-    ".": "./dist/index.html"
+    ".": "./www/index.html"
   },
   "dependencies": {
     "@emotion/react": "^11.11.4",
