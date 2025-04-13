@@ -1,0 +1,21 @@
+version: 0.2
+
+phases:
+  install:
+    runtime-versions:
+      nodejs: 18
+    commands:
+      - echo "Installing dependencies"
+      - npm install
+  build:
+    commands:
+      - echo "Building Vite project"
+      - npm run build
+  post_build:
+    commands:
+      - echo "Deploying to OVH via FTP"
+      - apt-get update && apt-get install -y lftp
+      - lftp -c "set ftp:ssl-allow no; open -u $FTP_USERNAME,$FTP_PASSWORD $FTP_HOST; mirror -R -e -n www /www"
+artifacts:
+  files:
+    - '**/*'
