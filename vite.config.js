@@ -10,6 +10,6 @@ export default defineConfig({
     jsxInject: `import 'react'`, // or the path to your React runtime
   },
   build: {
-    outDir: "www",
+    outDir: "dist",
   },
 });

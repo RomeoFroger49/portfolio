@@ -15,7 +15,7 @@ phases:
     commands:
       - echo "Deploying to OVH via FTP"
       - apt-get update && apt-get install -y lftp
-      - lftp -c "set ftp:ssl-allow no; open -u $FTP_USERNAME,$FTP_PASSWORD $FTP_HOST; mirror -R -e -n www /www"
+      - lftp -c "set ftp:ssl-allow no; open -u $FTP_USERNAME,$FTP_PASSWORD $FTP_HOST; mirror -R -e -n dist /www"
 artifacts:
   files:
     - '**/*'
