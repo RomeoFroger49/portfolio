@@ -38,15 +38,16 @@ export default function Me() {
             </h2>
 
             <h2 className="font-satoshiMedium text-md">
-              Alongside my professional experience, I worked on a project for{" "}
-              <i className="font-satoshiBlack">World Safety Power</i>,
-              developing both the <i className="text-primary">front-end</i> and{" "}
-              <i className="text-primary">back-end</i> of their corporate
-              website. Passionate about{" "}
-              <i className="bg-primary">web development</i> and{" "}
-              <i className="bg-primary">artificial intelligence</i>, I enjoy
-              taking on new technical challenges and continuously expanding my
-              skill set, including <i className="bg-primary">Ops and DevOps</i>.
+              I am currently focusing on developing{" "}
+              <i className="bg-primary">industry-ready skills</i> in{" "}
+              <i className="bg-primary">artificial intelligence</i>, spanning{" "}
+              <i className="text-primary">machine learning</i> and{" "}
+              <i className="text-primary">AI engineering</i>. Alongside my
+              work-study experience, I am completing advanced training programs,
+              including an{" "}
+              <i className="bg-primary">IBM professional certification</i>, to
+              strengthen my ability to build, integrate, and deploy AI-powered
+              systems.
             </h2>
           </div>
         </div>
