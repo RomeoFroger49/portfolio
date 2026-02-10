@@ -55,9 +55,9 @@ export default function SectionTexte() {
         ref={sectionRef}
       >
         <i id="i-section">Roméo Froger</i>, software engineering student focused
-        on building modern web applications and AI-powered systems, with a
-        strong interest in <i id="i-section">DevOps</i> and scalable
-        architectures.
+        on building modern web applications and <i id="i-section">AI-powered</i>{" "}
+        systems, with a strong interest in <i id="i-section">DevOps</i> and
+        scalable architectures.
       </p>
     </section>
   );

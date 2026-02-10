@@ -11,24 +11,24 @@ const skills = [
     ref: "front",
     skills: [
       {
-        name: "HTML/CSS",
-        progress: 90,
-        id: "htmlProgressBar",
-      },
-      {
-        name: "Javascript",
+        name: "TypeScript",
         progress: 80,
-        id: "jsProgressBar",
+        id: "tsProgressBar",
       },
       {
         name: "React",
-        progress: 65,
+        progress: 75,
         id: "reactProgressBar",
       },
       {
-        name: "VueJs",
-        progress: 50,
-        id: "tailwindProgressBar",
+        name: "UI / UX Integration",
+        progress: 70,
+        id: "uiuxProgressBar",
+      },
+      {
+        name: "Web Performance & Accessibility",
+        progress: 65,
+        id: "perfProgressBar",
       },
     ],
   },
@@ -36,14 +36,19 @@ const skills = [
     title: "Back-End",
     skills: [
       {
-        name: "PHP",
-        progress: 60,
-        id: "phpProgressBar",
+        name: "Node.js",
+        progress: 75,
+        id: "nodeProgressBar",
       },
       {
-        name: "MySQL",
+        name: "API Design (REST)",
         progress: 70,
-        id: "mysqlProgressBar",
+        id: "apiProgressBar",
+      },
+      {
+        name: "Databases (SQL)",
+        progress: 70,
+        id: "dbProgressBar",
       },
       {
         name: "Symfony",
@@ -53,27 +58,27 @@ const skills = [
     ],
   },
   {
-    title: "Others",
+    title: "Engineering & AI",
     skills: [
       {
-        name: "Git",
+        name: "Applied AI / LLMs",
+        progress: 70,
+        id: "aiProgressBar",
+      },
+      {
+        name: "DevOps Fundamentals",
+        progress: 65,
+        id: "devopsProgressBar",
+      },
+      {
+        name: "Docker",
+        progress: 65,
+        id: "dockerProgressBar",
+      },
+      {
+        name: "Git & Collaboration",
         progress: 85,
         id: "gitProgressBar",
-      },
-      {
-        name: "Figma",
-        progress: 80,
-        id: "figmaProgressBar",
-      },
-      {
-        name: "Node.js",
-        progress: 70,
-        id: "nodeProgressBar",
-      },
-      {
-        name: "Agile methods",
-        progress: 80,
-        id: "agileProgressBar",
       },
     ],
   },
