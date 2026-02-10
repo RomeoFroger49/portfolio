@@ -54,12 +54,10 @@ export default function SectionTexte() {
         className="xl:text-4xl text-lg font-satoshiMedium  text-[rgb(209,209,200)] sm:leading-[5rem] leading-[3rem]"
         ref={sectionRef}
       >
-        <i id="i-section">Roméo Froger</i>, a first-year computer engineer
-        student, I design and build modern, efficient web applications — from
-        intuitive UI to robust back-end systems. Driven by curiosity, I’m also
-        exploring <i id="i-section">DevOps</i> and{" "}
-        <i id="i-section">applied AI</i> to create scalable, real-world
-        solutions.
+        <i id="i-section">Roméo Froger</i>, software engineering student focused
+        on building modern web applications and AI-powered systems, with a
+        strong interest in <i id="i-section">DevOps</i> and scalable
+        architectures.
       </p>
     </section>
   );
